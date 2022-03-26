@@ -13,5 +13,9 @@ jobs:
           node-version: 16
           cache: yarn
 
+      - env:
+        REDIS_HOST: ${{ secrets.REDIS_HOST }}
+        REDIS_PASSWORD: ${{ secrets.REDIS_PASSWORD }}
+
       - run: yarn install --frozen-lockfile
       - run: yarn build

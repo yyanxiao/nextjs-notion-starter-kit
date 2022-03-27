@@ -5,6 +5,8 @@ import { isRedisEnabled, redisUrl, redisNamespace } from './config'
 
 let db: Keyv
 if (isRedisEnabled) {
+  console.log({ redisUrl })
+
   const keyvRedis = new KeyvRedis(redisUrl)
   db = new Keyv({ store: keyvRedis, namespace: redisNamespace || undefined })
 } else {

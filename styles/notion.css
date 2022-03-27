@@ -320,14 +320,22 @@
   background: none !important;
 }
 
-.notion-block-f382a57807bc40779860eb079d0144f2 .lazy-image-wrapper {
-  border-radius: 16px;
+.notion-row {
+  overflow: unset;
+}
+
+.notion-block-f382a57807bc40779860eb079d0144f2 img.medium-zoom-image {
+  border-radius: 8px;
+  box-shadow: 4px 4px 24px rgb(0 0 0 / 21%);
+}
+.notion-block-f382a57807bc40779860eb079d0144f2 span {
+  overflow: visible !important;
 }
 
 /* if you don't want rounded page icon images, remove this */
 .notion-page-icon-hero.notion-page-icon-image {
   border-radius: 50%;
-  box-shadow: 0 8px 40px 0 rgb(0 0 0 / 21%);
+  box-shadow: 4px 4px 24px 0 rgb(0 0 0 / 21%);
 }
 .notion-page-icon-hero.notion-page-icon-image span,
 .notion-page-icon-hero.notion-page-icon-image img {
